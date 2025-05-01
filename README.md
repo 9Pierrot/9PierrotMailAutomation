@@ -43,9 +43,9 @@ pip install pandas openpyxl
 
 ## Excel File Format
 
-The Excel file must contain the following columns (case-sensitive):
+The Excel file must be in this format (case-sensitive):
 
-| Civilité | Name | Email           |
+| Civilité | Name | Email            |
 |----------|------|------------------|
 | Mr.      | John | john@email.com   |
 | Ms.      | Jane | jane@email.com   |
