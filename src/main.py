@@ -3,13 +3,13 @@ import smtplib
 from email.message import EmailMessage
 
 # 1. Lire le fichier Excel
-df = pd.read_excel("contacts.xlsx")
+df = pd.read_excel("../tabs/test.xlsx")
 
 # 2. Configuration SMTP (exemple avec Gmail)
-smtp_server = 'smtp.gmail.com'
+smtp_server = 'smtp.office365.com' # 'smtp.gmail.com' pour un compte Gmail
 smtp_port = 587
-email_address = 'ton.email@gmail.com'
-email_password = 'ton_mot_de_passe'  # Utilise un mot de passe d'application
+email_address = 'kodjopierre_atadegnon@reseau.eseo.fr'
+email_password = 'K_P_9_reseaueseo'  # Utiliser un mot de passe d'application si possible
 
 # 3. Connexion au serveur SMTP
 with smtplib.SMTP(smtp_server, smtp_port) as smtp:
@@ -18,7 +18,7 @@ with smtplib.SMTP(smtp_server, smtp_port) as smtp:
 
     for index, row in df.iterrows():
         nom = row['Nom']
-        titre = row['Titre']
+        # titre = row['Titre']
         to_email = row['Email']
 
         # Création du message
@@ -29,10 +29,9 @@ with smtplib.SMTP(smtp_server, smtp_port) as smtp:
         msg.set_content(f"""\
 Bonjour {nom},
 
-Je vous écris en tant que {titre}. Ceci est un mail envoyé automatiquement via Python !
+Ceci est un message automatique envoyé depuis un script Python.
 
-Bien cordialement,
-[TON NOM]
+[Pierre Atadegnon]
         """)
 
         # Envoi du mail
