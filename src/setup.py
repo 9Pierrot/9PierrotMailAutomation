@@ -14,7 +14,7 @@ email_password = 'put your password here'  # sender email password
 
 
 BASE_PATH = os.path.dirname(__file__)
-EXCEL_PATH = os.path.join(BASE_PATH, "../tabs/ClasseurTest.xlsx")  # path to the Excel file
+EXCEL_PATH = os.path.join(BASE_PATH, "../tabs/yourTab.xlsx")  # path to the Excel file
 ATTACHMENT_FOLDER = os.path.join(BASE_PATH, "../attachments/")          # path to the folder containing the attachments
 
 
