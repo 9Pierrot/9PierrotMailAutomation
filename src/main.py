@@ -38,6 +38,8 @@ with smtplib.SMTP(smtp_server, smtp_port) as smtp:
 
     for index, row in df.iterrows():
         # declare here the variables getting the data from the Excel file
+
+        ####################################################################
         # example for a table with the columns : Civilité, Nom, Email
         # | Civility  | Name  | Email  |
         # |-----------|-------|--------|
@@ -49,6 +51,7 @@ with smtplib.SMTP(smtp_server, smtp_port) as smtp:
         to_civility = row['Civility']
         to_name = row['Name']
         to_email = row['Email']
+        ####################################################################
 
         # create the email message
         msg = EmailMessage()
