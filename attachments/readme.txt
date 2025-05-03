@@ -1,1 +1,1 @@
-Delect this file and put your attachment files in this folder.
+Delete this file and put your attachment files in this folder.

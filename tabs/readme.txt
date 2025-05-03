@@ -1,1 +1,1 @@
-Delect this file and put your excel file in this folder.
+Delete this file and put your excel file in this folder.
